@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h3>Tutorials: What, Why, When, How</h3>
+						<p>by ya #1 wordsy boi, Ed Prosser</p>
+					</section>
+					<section>
+						<p>We're going to cover:</p>
+					</section>
+					<section>
+						<p><i>what</i> is a tutorial</p>
+					</section>
+					<section>
+						<p><i>why</i> we use them</p>
+					</section>
+					<section>
+						<p><i>when</i> we should use them</p>
+					</section>
+					<section>
+						<p><i>how</i> we should use them</p>
+					</section>
+				</section>
+				<section>
+					<h2>Obligatory meme slide</h2>
+					<section>
+						<img src="./images/meme.jpg"></img>
+					</section>
+				</section>
+				<section>
+					<h4>What is a tutorial.</h4>
+						<section>
+							<p>In general, we break content down into three broad types.</p>
+						</section>
+						<section>
+							<p>Concepts</p>
+							<ul>
+								<small><li class="fragment fade-in">Concepts are always informative, rather than instructive. They have no gerunds (eff<b class="fragment highlight-red">ing</b>, blind<b class="fragment highlight-blue">ing</b>, infuriat<b class="fragment highlight-green">ing</b> words)</li></small>
+								<small><li class="fragment fade-in">Concepts have the broadest range of audiences, from the very general "Introduction to Composer" to the very narrow "Fabric Transaction Lifecycle: A treatise in 90,000 words".</li></small>
+							</ul>
+						</section>
+						<section>
+							<p>Tasks</p>
+							<ul>
+								<small><li class="fragment fade-in">Tasks are always instructive. They are gerund central.<span class="fragment fade-in"> Installing</span><span class="fragment fade-in">, upgrading</span><span class="fragment fade-in">, deploying</span><span class="fragment fade-in">, destroying</span><span class="fragment fade-in">, deleting</span><span class="fragment fade-in">, complaining</span><span class="fragment fade-in">, and sacking</span><span class="fragment fade-in"> are all good task topic beginnings.</span></li></small>
+								<small><li class="fragment fade-in">The point is that they help a user get from point A to point B <i>in terms of a task, function, or objective</i>. They are <span class="fragment highlight-red">specific</span>, and preferably <span class="fragment highlight-green">actionable by one person</span>.</li></small>
+								<small><li class="fragment fade-in">Good examples of tasks: Installing Hyperledger Composer, <span class="fragment highlight-blue">Using Google OAUTH2.0 with the Composer REST server</span>.</li></small>
+							</ul>
+						</section>
+						<section>
+							<p>References</p>
+							<ul>
+								<small><li class="fragment fade-in">References are for technical information, they shouldn't be required reading for following the rest of the documentation, but will likely be required for building a custom solution.</li></small>
+								<small><li class="fragment fade-in">API documentation is a good example of a reference document, as well as command lists.</li></small>
+							</ul>
+						</section>
+						<section>
+							<i>"bUt WhErE aRe ThE tUtOrIaLs!?11?1!/?"</i>
+						</section>
+						<section>
+							<b>DON'T PANIC</b>
+						</section>
+						<section>
+							<p class="fragment fade-in">Where do tutorials live in this scheme?</p>
+							<p class="fragment fade-in">Well it depends on the tutorial.</p>
+						</section>
+						<section>
+							<p>Tutorials are somewhere between a concept and a task.</p>
+						</section>
+						<section>
+							<p>What makes a tutorial:</p>
+							<ol>
+								<li class="fragment fade-in-then-semi-out"><small>Tutorials have a learning objective. They exist to teach something, rather than a task's functional objective (to <i>do</i> something).</small></li>
+								<li class="fragment fade-in-then-semi-out"><small>Unlike a concept tutorials are not theoretical explanations of a concept. Unlike a task, tutorials are relatively broadly scoped.</small></li>
+								<li class="fragment fade-in-then-semi-out"><small>Tutorials serve as an example. They are there to guide, but not to instruct, users on how to structure or develop their own projects.</small></li>
+								<li class="fragment fade-in-then-semi-out"><small>They include not only steps to follow, but also explanations on <b>why</b> those steps are being taken.</small></li>
+							</ol>
+						</section>
+				</section>
+				<section>
+					<h4>Why do we use tutorials.</h4>
+					<section>
+						<p>Tutorials are useful for a number of reasons:</p>
+					</section>
+					<section>
+						<p>1. People learn by doing.</p>
+					</section>
+					<section>
+						<p>When there are a lot of cliff edges to fall off, providing a tutorial that includes best practices and a general use-case or example gives the reader a good place to work from.</p>
+					</section>
+					<section>
+						<p>2. Tutorials often require minimal context.</p>
+					</section>
+					<section>
+						<p>When writing a tutorial, it doesn't matter what the reader's specific business use-case is. For example, whether you're tracking containers or building cars, understanding the access control language is just as useful<small>*</small>. This is a major differentiator from a task. Tasks are very specific in their positioning, as you can see in the following example of a table of contents.</p>
+						<small><small><p class="fragment fade-in">*IBM does not endorse using composer now, in the future, or in the past. Forever and ever, Amen.</p></small></small>
+					</section>
+					<section>
+						<img src="./images/ToC.jpg" height="50%" width="50%"></img></br>
+						<small><p class="fragment fade-in-then-out">Source: IBM Integration Bus v10 Docs</p></small>
+					</section>
+					<section>
+						<p>3. Tutorals set a precedent.</p>
+					</section>
+					<section>
+						<p>Tutorials set a precedent for future behaviour. We tutorialise the 'golden path' generic behaviour we want users to replicate.</p>
+					</section>
+				</section>
+				<section>
+					<h4>When do we use tutorials.</h4>
+					<section>
+						<p>When we need a tutorial can sometimes be hard to define:</p>
+					</section>
+					<section>
+						<p>1. When dealing with complex infrastructure or surrounding technologies.</p>
+					</section>
+					<section>
+						<p>Some of the Composer documentation is a great example of adding tutorials to the golden path. We cover getting to grips with the composer modelling language, organisational tutorials (single and multi-org), and an introduction to the access control language.</p>
+					</section>
+					<section>
+						<p>2. Tutorials are very useful when we expect a near-infinite number of customer use-cases.</p>
+					</section>
+					<section>
+						<p>When there are too many potential task topics to begin considering writing, we can be forced to cover the gap with tutorials. By writing tutorials, we can outline the best practices in a simple environment, and advise users to follow our example when building their own solutions.</p>
+					</section>
+					<section>
+						<p>3. When we need to explain something quickly, or provide understanding in a fixed real-world context.</p>
+					</section>
+					<section>
+						<p>Getting people up to speed quickly is difficult in a task topic. Tasks are focused on completing the functional objective as efficiently as possible, whereas if understanding is the goal, tasks can often leave the reader behind. Great examples when tutorials can help are: hackathons, client workshops, demos, and proof-of-concepts.</p>
+					</section>
+				</section>
+				<section>
+					<h4>How do we use tutorials</h4>
+					<section>
+						<p>Luckily, having defined what, why, and when we use tutorials, how to use them is quite simple:</p>
+					</section>
+					<section>
+						<p>1. We use tutorials to give our users the knowledge to make something themselves.</p>
+					</section>
+					<section>
+						<p>2. We use tutorials to set a good example to users.</p>
+					</section>
+					<section>
+						<p>3. We use tutorials at key points in a user's development lifecycle.</p>
+					</section>
+				</section>
+				<section>
+					<h4>Summary</h4>
+					<section>
+						<p>Tutorials are:</p>
+						<p>Topics that have a learning objective over a functional objective, use examples, and explain why each action is taken to teach the reader how to implement a system or process.</p>
+					</section>
+					<section>
+						<p>Tutorials are good because:</p>
+						<p>By following a process topic with a learning objective, the reader is engaged in the activity, as well as reading about it. Tutorials are more general than tasks, affording them a lower barrier to entry, whilst imparting information to the user in the form of reinforcing the 'golden path' we want them to take.</p>
+					</section>
+					<section>
+						<p>We use tutorials when:</p>
+						<p>When we have an agenda on the information we want our users to learn, especially when complexity can lead them astray, or when we can't account for all the potential scenarios the user might have. Tutorials are also useful when we need to priotise the understanding of the reader over any functional objectives.</p>
+					</section>
+					<section>
+						<p>We use tutorials by:</p>
+						<p>We use tutorials by choosing the roadmap for users to follow, giving them the information for them to plan their own route, and placing tutorials as signposts at different stages of the expected development lifecycle.</p>
+					</section>
+				</section>
+				<section>
+					<h4>What do we do well?</h4>
+					<ul>
+						<small><li class="fragment fade-in-then-semi-out">We cover a lot of 'golden path' ground. Users have a lot of places to go to learn how to get started.</li></small>
+						<small><li class="fragment fade-in-then-semi-out">We do a great job of contextualising our tutorials, we set the objectives well and, in general, our tutorials are effective.</li></small>
+						<small><li class="fragment fade-in-then-semi-out">As a team, there's broad buy-in to the idea of teaching users rather than just instructing users.</li></small>
+					</ul>
+				</section>
+				<section>
+					<h4>What do we do not-so-well?</h4>
+					<ul>
+						<small><li class="fragment fade-in-then-semi-out">We often create tutorials which really should be tasks, some of our tutorials are on <i>very</i> specific topics.</li></small>
+						<small><li class="fragment fade-in-then-semi-out">The teams focus has changed very quickly over the last 18 months, which means that we might be better served by going back and ensuring that the path we're leading user down is still correct.</li></small>
+						<small><li class="fragment fade-in-then-semi-out">There are times, especially in the Fabric space, where we rely on tutorials to cover our users needs, to the detriment of tasks, notable with BYFN.</li></small>
+				</section>
+				<section>
+					<h4>I know this has been terribly boring.</h4>
+					<p class="fragment fade-in">So here's a kitty to make it better...</p>
+				</section>
+				<section data-background-video="https://giant.gfycat.com/ObviousShockingBronco.webm">
+				</section>
+				<section>
+					<h4>Q&A time.</h4>
+				</section>
+				<section>
+					<h4 class="fragment fade-out">Thank you!</h4>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
